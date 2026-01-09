@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "ncc build index.js -o dist",
+  "build": "ncc build index.js -o dist --no-external",
   "test": "echo \"Error: no test specified\" && exit 1"
 },
   "repository": {
