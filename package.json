@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "build": "ncc build index.js -o dist",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simonkolz/coderco-custom.git"
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/simonkolz/coderco-custom#readme",
   "dependencies": {
     "@actions/core": "^2.0.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
   }
 }
